@@ -24,9 +24,9 @@
           <% end %>
         </td>
         <td>
-          <% if my_wine.wine.present? %>
-            <a href="/wines/<%= my_wine.wine.id %>">
-              <%= my_wine.wine.wine_name %>
+          <% if my_wine.wines.present? %>
+            <a href="/wines/<%= my_wine.wines.id %>">
+              <%= my_wine.wines.wine_name %>
             </a>
           <% end %>
         </td>

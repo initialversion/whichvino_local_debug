@@ -3,7 +3,9 @@ class MyWine < ApplicationRecord
 
   belongs_to :user
 
-  belongs_to :wine
+  belongs_to :wines,
+             :class_name => "Wine",
+             :foreign_key => "wine_id"
 
   # Indirect associations
 
